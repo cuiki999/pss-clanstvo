@@ -1,0 +1,70 @@
+// HELPERS
+
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+@import "helpers/variables";
+
+// LAYOUT
+
+@import "layout/header";
+@import "layout/footer";
+
+// PAGES
+
+@import "pages/index";
+@import "pages/form";
+@import "pages/confirmation";
+@import "pages/payment";
+@import "pages/finish";
+
+// STYLES
+
+html {
+	font-size: 15px;
+
+	@media #{$small-and-down} {
+		font-size: 14px;
+	}
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: $pirateGrey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 800;
+	margin-top: 4rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+strong {
+	font-weight: 700;
+}
+
+
+@media #{$large-and-up} {
+	.container {
+		width: 80%;
+	}
+}
+
+.green-bar {
+	margin-top: 3rem;
+}
+
+.progress {
+    height: 0.7rem;
+    background-color: #c0e8d0;
+}
+

@@ -1,0 +1,37 @@
+.nav-wrapper {
+	height: 100px;
+
+	@media #{$medium-and-down} {
+		height: 180px;
+	}
+}
+
+.brand-logo {
+	margin-top: 15px;
+}
+
+.postani-clan {
+	color: $pirateGrey;
+	font-weight: 700;
+	float: right;
+	font-size: 22px;
+	line-height: 23px;
+	text-align: right;
+	white-space: nowrap;
+
+	@media #{$medium-and-down} {
+		text-align: center;
+		margin-top: 105px;
+		position: absolute;
+		left: 50%;
+     	transform: translateX(-50%);
+	}
+
+	@media #{$small-and-down} {
+		font-size: 18px;
+	}
+
+	span {
+		display: block;
+	}
+}

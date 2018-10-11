@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Fonts & icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800,800i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"><link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="https://piratskastranka.si/wp-content/uploads/2018/02/favicon-150x150.png" sizes="32x32">
+	<title>Pristopna izjava</title>
+</head>
+
+<body>
+
+	<nav class="nav-wrapper white">
+		<div class="container" id="header">
+			<img src="https://piratskastranka.si/wp-content/uploads/2018/02/pirati-logo.png" class="brand-logo" alt="Piratska stranka (Pirati)">
+			<p class="postani-clan pirate-grey-text"><span>VČLANI SE V</span> <span>PIRATSKO STRANKO!</span></p>
+		</div>
+	</nav>
+
+  <div class="container green-bar">
+    <span>1/4</span>
+    <div class="progress">
+      <div class="determinate green" style="width: 25%"></div>
+    </div>
+	</div>
+
+  <div class="container pirate-form-container">
+  	<h1 class="center">Pristopna izjava v Piratsko stranko Slovenije</h1>
+		<form class="pirate-form" action="#">
+			<div class="row">
+        <div class="col s12">
+          Ime in priimek:
+          <div class="input-field block">
+            <input id="name-lastname" type="text">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          Datum rojstva:
+          <div class="input-field block">
+            <input id="date-of-birth" type="text" placeholder="dd. mm. llll">
+          </div>
+        </div>
+      </div>
+	    <div class="row">
+		    <div class="col s12">
+			    Spol:
+			    <p>
+		        <input class="with-gap" value="moski" type="radio" checked />
+		        <span>Moški</span>
+			    </p>
+			    <p>
+		        <input class="with-gap" value="zenski" type="radio" />
+		        <span>Ženski</span>
+			    </p> 
+			  </div>
+		  </div>
+		  <div class="row">
+        <div class="col s12 l8">
+          Stalno prebivališče:
+          <div class="input-field block">
+            <input id="address" type="text" placeholder="ulica, hišna številka">
+          </div>
+        </div>
+        <div class="col s4 l3 offset-l1">
+          Poštna številka:
+          <div class="input-field block">
+            <input id="post-code" type="text" pattern="[0-9]{4}">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          Državljanstvo:
+          <div class="input-field block">
+            <input id="nationality" type="text">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          E-pošta:
+          <div class="input-field block">
+            <input id="email" type="email">
+          </div>
+          <span class="footnote right">Uporablja se za obveščanje o dogajanju v stranki in <strong>e-glasovanje</strong></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          Telefon:
+          <div class="input-field block">
+            <input id="phone" type="tel" placeholder="(ni obvezen)">
+          </div>
+          <span class="footnote right">Uporablja se le za kontaktiranje s strani vodstva stranke v izjemnih primerih oz. ob aktivnem sodelovanju</span>
+        </div>
+      </div>
+	    <div class="input-field">
+	      <p>Services required:</p>
+	      <p>
+	        <label>
+	          <input type="checkbox">
+	          <span>Photography</span>
+	        </label>
+	      </p>
+	      <p>
+	        <label>
+	          <input type="checkbox">
+	          <span>Photo Editing</span>
+	        </label>
+	      </p>
+	    </div>
+	    <div class="input-field center">
+	      <button class="btn">Submit</button>
+	    </div>
+    </form>
+  </div>
+
+  <h1>bla bla</h1>
+
+
+
+  <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container center-align white-text">@ 2018 Piratska stranka</div>
+    </div>
+  </footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</body>

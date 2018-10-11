@@ -1,0 +1,76 @@
+.pirate-form-container {
+	max-width: 700px;
+	border: 1px solid $pirateGrey;
+	box-shadow: 0.3rem 0.3rem 0.8rem 0 rgba(170, 170, 170, 0.5);
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin-top: 3rem;
+
+	@media #{$small-and-down} {
+		border: none;
+		margin-top: 0;
+	}
+}
+
+.pirate-form {
+	margin-top: 4rem;
+}
+
+::placeholder {
+	color: $pirateGrey;
+}
+
+#address {
+
+	@media #{$medium-and-down} {
+		margin-bottom: 2.3rem;
+	}
+}
+
+.input-field {
+  margin-bottom: 0rem;
+
+  &.block {
+    margin-top: -0.5rem;
+  }
+}
+
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+
+    &:focus:not([readonly]) {
+    border-bottom: 1px solid $pirateOrange;
+    box-shadow: 0 1px 0 0 $pirateOrange;
+  }
+
+  &:focus:not([readonly])+label {
+    color: $pirateOrange;
+  }
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid $pirateOrange;
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: $pirateOrange;
+}
+
+.footnote {
+	font-size: 0.8rem;
+
+}

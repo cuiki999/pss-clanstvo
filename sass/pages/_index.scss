@@ -1,0 +1,65 @@
+.list {
+  &:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: disc;
+
+    & > li {
+      list-style-type: disc;
+    }
+  }
+}
+
+#chev-right {
+	margin: 2.8rem 0.5rem 0 1rem;
+}
+
+.chevron {
+  
+  &__line1 {
+    @extend %chevron-line-base;
+    -webkit-transform-origin: 45px 15px;      // I can't get the transform-origin @mixin to work :/
+    -moz-transform-origin: 45px 15px;
+    -ms-transform-origin: 45px 15px;
+    transform-origin: 45px 15px;
+    stroke: $pirateOrange;
+    @include transform(rotate(40deg));
+
+    @media #{$medium-and-down} {
+	    -webkit-transform-origin: 50px 50px;
+	    -moz-transform-origin: 50px 50px;
+    	-ms-transform-origin: 50px 50px;
+    	transform-origin: 50px 50px;	
+    }
+  }
+  
+  &__line2 {
+    @extend %chevron-line-base;
+    -webkit-transform-origin: 52px 135px;
+    -moz-transform-origin: 52px 135px;
+    -ms-transform-origin: 52px 135px;
+    transform-origin: 52px 135px;
+    stroke: $pirateOrange;
+    @include transform(rotate(-40deg));
+
+    @media #{$medium-and-down} {
+	    -webkit-transform-origin: 50px 50px;
+	    -moz-transform-origin: 50px 50px;
+    	-ms-transform-origin: 50px 50px;
+    	transform-origin: 50px 50px;	
+    }
+  } 
+
+	&--down {
+    
+	    .chevron {
+
+			&__container {
+			@include transform(translateY(13px));
+			}			   
+		}
+  	}
+}
+
+.naprej {
+	margin-top: 3rem;
+}
