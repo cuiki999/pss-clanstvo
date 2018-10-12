@@ -18,20 +18,26 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 $pirateOrange: #f68f35;      // use for Sass styles
 $pirateGrey: #414042;
+$progressBlue: #c0e8d0;
 
 $pirate-orange: (            // use for HTML classes
-	"base": #f68f35,
-	"lighten-3": #fcd464,
-	"darken-3": #b26d07
+  "base": #f68f35,
+  "lighten-3": #fcd464,
+  "darken-3": #b26d07
 );
 
 $pirate-grey: (
-	"base": #414042
+  "base": #414042
+);
+
+$progress-blue: (
+  "base": #c0e8d0
 );
 
 $colors: (
-	"pirate-orange": $pirate-orange,
-	"pirate-grey": $pirate-grey
+  "pirate-orange": $pirate-orange,
+  "pirate-grey": $pirate-grey,
+  "progress-blue": $progress-blue
 );
 
 @each $color_name, $color in $colors {

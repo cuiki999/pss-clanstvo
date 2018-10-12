@@ -26,6 +26,12 @@
 .pirate-grey-text {
   color: #414042 !important; }
 
+.progress-blue {
+  background-color: #c0e8d0 !important; }
+
+.progress-blue-text {
+  color: #c0e8d0 !important; }
+
 .nav-wrapper {
   height: 100px; }
   @media only screen and (max-width: 992px) {
@@ -69,6 +75,85 @@
   .list:not(.browser-default) > li {
     list-style-type: disc; }
 
+.pirate-form-container {
+  max-width: 800px;
+  border: 1px solid #fff;
+  box-shadow: 0.3rem 0.3rem 0.8rem 0 rgba(170, 170, 170, 0.5);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 3rem; }
+  @media only screen and (max-width: 600px) {
+    .pirate-form-container {
+      border: none;
+      box-shadow: none;
+      margin-top: 0;
+      padding-left: 0;
+      padding-right: 0; } }
+
+.pirate-form {
+  margin-top: 4rem; }
+
+@media only screen and (max-width: 992px) {
+  #address {
+    margin-bottom: 2.3rem; } }
+
+.note {
+  font-size: 0.8rem; }
+
+.radio-container {
+  margin-top: 1rem;
+  display: block;
+  position: relative;
+  color: #414042; }
+
+.extra-space {
+  margin-top: 3rem; }
+  @media only screen and (max-width: 600px) {
+    .extra-space .move-down {
+      margin-top: 3rem; } }
+
+.tip-delovanja {
+  margin-top: 1.5rem;
+  margin-bottom: -1rem; }
+
+.checkbox-container {
+  margin-top: 1rem;
+  display: block;
+  position: relative;
+  color: #414042; }
+  @media only screen and (max-width: 600px) {
+    .checkbox-container .nacionalno {
+      margin-top: 2rem; } }
+
+.final-footnote {
+  font-size: 0.8rem;
+  margin-left: 3rem; }
+
+.btn-large {
+  width: 100%; }
+
+.blue-frame {
+  margin: 0.2rem;
+  border-radius: 4px;
+  min-height: 19rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem 0 rgba(170, 170, 170, 0.8); }
+  @media only screen and (max-width: 992px) {
+    .blue-frame {
+      min-height: auto;
+      max-width: auto; } }
+  .blue-frame p {
+    padding: 2rem; }
+    .blue-frame p span {
+      white-space: nowrap; }
+
+.file-field .btn {
+  margin-left: 2rem; }
+.file-field .file-path-wrapper {
+  margin-right: 2rem; }
+
+dl {
+  margin-top: 2rem; }
+
 #chev-right {
   margin: 2.8rem 0.5rem 0 1rem; }
 
@@ -110,30 +195,15 @@
   -ms-transform: translateY(13px);
   transform: translateY(13px); }
 
-.naprej {
+.green-bar {
   margin-top: 3rem; }
 
-.pirate-form-container {
-  max-width: 700px;
-  border: 1px solid #414042;
-  box-shadow: 0.3rem 0.3rem 0.8rem 0 rgba(170, 170, 170, 0.5);
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-top: 3rem; }
-  @media only screen and (max-width: 600px) {
-    .pirate-form-container {
-      border: none;
-      margin-top: 0; } }
-
-.pirate-form {
-  margin-top: 4rem; }
+.progress {
+  height: 0.7rem;
+  background-color: #c0e8d0; }
 
 ::placeholder {
   color: #414042; }
-
-@media only screen and (max-width: 992px) {
-  #address {
-    margin-bottom: 2.3rem; } }
 
 .input-field {
   margin-bottom: 0rem; }
@@ -179,7 +249,14 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 [type="radio"].with-gap:checked + span:after {
   background-color: #f68f35; }
 
-.footnote {
+[type="checkbox"].filled-in:checked + span:not(.lever):before {
+  border-right: 2px solid #f68f35;
+  border-bottom: 2px solid #f68f35; }
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+  border: 2px solid #414042;
+  background-color: #fff; }
+
+[type="checkbox"] + span:not(.lever).footnote {
   font-size: 0.8rem; }
 
 html {
@@ -190,6 +267,11 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  color: #414042; }
+
+a {
+  text-decoration: underline;
+  font-weight: bold;
   color: #414042; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -210,11 +292,10 @@ strong {
 @media only screen and (min-width: 993px) {
   .container {
     width: 80%; } }
-.green-bar {
-  margin-top: 3rem; }
+.empty-space {
+  height: 3rem; }
 
-.progress {
-  height: 0.7rem;
-  background-color: #c0e8d0; }
+.naprej, .poslji {
+  margin-top: 3rem; }
 
 /*# sourceMappingURL=main.css.map */

@@ -41,6 +41,7 @@
           </div>
         </div>
       </div>
+      
       <div class="row">
         <div class="col s12">
           Datum rojstva:
@@ -49,20 +50,22 @@
           </div>
         </div>
       </div>
-	    <div class="row">
+      
+      <div class="row">
 		    <div class="col s12">
 			    Spol:
-			    <p>
-		        <input class="with-gap" value="moski" type="radio" checked />
-		        <span>Moški</span>
-			    </p>
-			    <p>
-		        <input class="with-gap" value="zenski" type="radio" />
-		        <span>Ženski</span>
-			    </p> 
+          <label class="radio-container">
+            <input class= "with-gap" value="moski" type="radio" checked="checked" name="group1">
+              <span class="radio-content">Moški</span>
+          </label>
+          <label class="radio-container">
+            <input class="with-gap" value="zenski" type="radio" name="group1">
+            <span class="radio-content">Ženski</span>
+          </label>
 			  </div>
-		  </div>
-		  <div class="row">
+		  </div>		  
+      
+      <div class="row">
         <div class="col s12 l8">
           Stalno prebivališče:
           <div class="input-field block">
@@ -76,6 +79,7 @@
           </div>
         </div>
       </div>
+      
       <div class="row">
         <div class="col s12">
           Državljanstvo:
@@ -84,48 +88,138 @@
           </div>
         </div>
       </div>
+      
       <div class="row">
         <div class="col s12">
           E-pošta:
           <div class="input-field block">
             <input id="email" type="email">
           </div>
-          <span class="footnote right">Uporablja se za obveščanje o dogajanju v stranki in <strong>e-glasovanje</strong></span>
+          <span class="note right">Uporablja se za obveščanje o dogajanju v stranki in <strong>e-glasovanje</strong></span>
         </div>
       </div>
+      
       <div class="row">
         <div class="col s12">
           Telefon:
           <div class="input-field block">
             <input id="phone" type="tel" placeholder="(ni obvezen)">
           </div>
-          <span class="footnote right">Uporablja se le za kontaktiranje s strani vodstva stranke v izjemnih primerih oz. ob aktivnem sodelovanju</span>
+          <span class="note right">Uporablja se le za kontaktiranje s strani vodstva stranke v izjemnih primerih oz. ob aktivnem sodelovanju</span>
         </div>
       </div>
-	    <div class="input-field">
-	      <p>Services required:</p>
-	      <p>
-	        <label>
-	          <input type="checkbox">
-	          <span>Photography</span>
-	        </label>
-	      </p>
-	      <p>
-	        <label>
-	          <input type="checkbox">
-	          <span>Photo Editing</span>
-	        </label>
-	      </p>
-	    </div>
-	    <div class="input-field center">
-	      <button class="btn">Submit</button>
-	    </div>
+	    
+      <div class="row extra-space">
+        <div class="col s12 m6">
+          Status:
+          <label class="radio-container">
+            <input class= "with-gap" value="student" type="radio" checked="checked" name="group2">
+              <span class="radio-content">Študent</span>
+          </label>
+          <label class="radio-container">
+            <input class="with-gap" value="zaposlen" type="radio" name="group2">
+            <span class="radio-content">Zaposlen</span>
+          </label>
+          <label class="radio-container">
+            <input class= "with-gap" value="brezposeln" type="radio" name="group2">
+              <span class="radio-content">Brezposeln</span>
+          </label>
+          <label class="radio-container">
+            <input class="with-gap" value="upokojenec" type="radio" name="group2">
+            <span class="radio-content">Upokojenec</span>
+          </label>
+        </div>
+        <div class="col s12 m6 move-down">
+          <span class>Aktivno sodelovanje:</span>
+          <label class="radio-container">
+            <input class= "with-gap" value="da" type="radio" checked="checked" name="group3">
+              <span class="radio-content">Da</span>
+          </label>
+          <label class="radio-container">
+            <input class="with-gap" value="ne" type="radio" name="group3">
+            <span class="radio-content">Ne</span>
+          </label>
+        </div>
+      </div>    
+
+      <div class="row">
+        <div class="col s12 tip-delovanja">
+          Tip delovanja:
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <label class="checkbox-container">
+            <input type="checkbox" class="filled-in">
+            <span><strong>lokalno</strong></span>
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" class="filled-in">
+            <span>kandidatura</span>
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" class="filled-in">
+            <span>aktivizem</span>
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" class="filled-in">
+            <span>program</span>
+          </label>
+        </div>
+        <div class="col s12 m6">
+          <label class="checkbox-container">
+            <input type="checkbox" class="filled-in">
+            <span class="nacionalno"><strong>nacionalno</strong></span>
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" class="filled-in">
+            <span>kandidatura</span>
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" class="filled-in">
+            <span>aktivizem</span>
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" class="filled-in">
+            <span>program</span>
+          </label>
+        </div>
+      </div>
+
+      <br>
+      <hr>
+
+      <div class="row">
+        <div class="col s12">
+          <label class="checkbox-container">
+            <input type="checkbox" class="filled-in">
+            <span class="footnote">S podpisom sprejemam program in statut stranke in izjavljam, da so vsi posredovani podatki resnični.</span>
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" class="filled-in">
+            <span class="footnote">Podpisani dovoljujem uporabo podatkov za vodenje evidence članstva. Podatki, ki ste nam jih zaupali, so varovani in bodo uporabljeni izključno za potrebe delovanja stranke.</span>
+          </label>          
+        </div>
+      </div>
+      <div class="row">
+        <p class="final-footnote">Pirati omogočamo aktivno sodelovanje − informacijo o vašem članstvu ima le ožje vodstvo. Stranka vaše članstvo razkrije le v primeru kandidature oz. na lastno željo.</p>
+      </div>
+
+      <div class="row">
+      <div class="col s12 m4 offset-m9 l3 offset-l10">
+        <div class="container">
+          <a href="confirmation.html" class="btn pirate-orange poslji">
+            <span>Pošlji</span>
+            <i class="fas fa-caret-right right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
     </form>
   </div>
 
-  <h1>bla bla</h1>
-
-
+  <div class="empty-space">
+  </div>
 
   <footer class="page-footer grey darken-3">
     <div class="footer-copyright">
@@ -137,3 +231,5 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </body>
+
+</html>

@@ -1,1 +1,35 @@
-// CONFIRMATION
+.btn-large {
+	width:100%;
+}
+
+.blue-frame {
+	margin: 0.2rem;
+	border-radius: 4px;
+	min-height: 19rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem 0 rgba(170, 170, 170, 0.8);
+
+	@media #{$medium-and-down} {
+		min-height: auto;
+		max-width: auto;
+	}
+
+	p {
+		padding: 2rem;
+
+		span {
+			white-space: nowrap;
+		}
+	}
+}
+
+.file-field {
+	
+	.btn {
+	
+		margin-left: 2rem;
+	}
+
+	.file-path-wrapper {
+		margin-right: 2rem;
+	}
+}

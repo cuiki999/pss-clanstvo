@@ -1,0 +1,75 @@
+::placeholder {
+  color: $pirateGrey;
+}
+
+.input-field {
+  margin-bottom: 0rem;
+
+  &.block {
+    margin-top: -0.5rem;
+  }
+}
+
+// INPUT FIELDS
+
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+
+    &:focus:not([readonly]) {
+    border-bottom: 1px solid $pirateOrange;
+    box-shadow: 0 1px 0 0 $pirateOrange;
+  }
+
+  &:focus:not([readonly])+label {
+    color: $pirateOrange;
+  }
+}
+
+// RADIO BUTTONS
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid $pirateOrange;
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: $pirateOrange;
+}
+
+// CHECKBOXES
+
+[type="checkbox"].filled-in {
+
+	&:checked {
+    + span:not(.lever):before {
+      border-right: 2px solid $pirateOrange;
+      border-bottom: 2px solid $pirateOrange;
+    }
+
+    + span:not(.lever):after {
+      border: 2px solid $pirateGrey;
+      background-color: #fff;
+    }
+  }
+}
+
+[type="checkbox"] {
+  
+  + span:not(.lever).footnote {
+    font-size: 0.8rem;
+
+  }
+}

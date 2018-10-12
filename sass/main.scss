@@ -18,6 +18,12 @@
 @import "pages/payment";
 @import "pages/finish";
 
+// COMPONENTS
+
+@import "components/chevron";
+@import "components/progress";
+@import "components/forms";
+
 // STYLES
 
 html {
@@ -30,6 +36,12 @@ html {
 
 body {
 	font-family: "Open Sans", sans-serif;
+	color: $pirateGrey;
+}
+
+a {
+	text-decoration: underline;
+	font-weight: bold;
 	color: $pirateGrey;
 }
 
@@ -59,12 +71,10 @@ strong {
 	}
 }
 
-.green-bar {
+.empty-space {
+	height: 3rem;
+}
+
+.naprej, .poslji {
 	margin-top: 3rem;
 }
-
-.progress {
-    height: 0.7rem;
-    background-color: #c0e8d0;
-}
-
