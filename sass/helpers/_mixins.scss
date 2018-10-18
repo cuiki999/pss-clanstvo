@@ -4,3 +4,10 @@
 	    -ms-transform: $transform;
 		    transform: $transform;
 }
+
+@mixin transform-origin($transform-origin) {
+    -webkit-transform-origin: $transform-origin;
+       -moz-transform-origin: $transform-origin;
+	    -ms-transform-origin: $transform-origin;
+	        transform-origin: $transform-origin;
+}

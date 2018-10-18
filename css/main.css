@@ -33,7 +33,8 @@
   color: #c0e8d0 !important; }
 
 .nav-wrapper {
-  height: 100px; }
+  height: 100px;
+  display: flex; }
   @media only screen and (max-width: 992px) {
     .nav-wrapper {
       height: 180px; } }
@@ -44,7 +45,7 @@
 .postani-clan {
   color: #414042;
   font-weight: 700;
-  float: right;
+  margin-left: auto;
   font-size: 22px;
   line-height: 23px;
   text-align: right;
@@ -66,7 +67,6 @@
   padding-top: 0px; }
   .page-footer .footer-copyright {
     min-height: 30px;
-    align-items: center;
     padding: 0px 0px; }
 
 .list:not(.browser-default) {
@@ -127,7 +127,8 @@
 
 .final-footnote {
   font-size: 0.8rem;
-  margin-left: 3rem; }
+  margin-left: 3rem;
+  line-height: 25px; }
 
 .btn-large {
   width: 100%; }
@@ -161,11 +162,11 @@ dl {
   margin: 2.8rem 0.5rem 0 1rem; }
 
 .chevron__line1 {
+  stroke: #f68f35;
   -webkit-transform-origin: 45px 15px;
   -moz-transform-origin: 45px 15px;
   -ms-transform-origin: 45px 15px;
   transform-origin: 45px 15px;
-  stroke: #f68f35;
   -webkit-transform: rotate(40deg);
   -moz-transform: rotate(40deg);
   -ms-transform: rotate(40deg);
@@ -177,11 +178,11 @@ dl {
       -ms-transform-origin: 50px 50px;
       transform-origin: 50px 50px; } }
 .chevron__line2 {
+  stroke: #f68f35;
   -webkit-transform-origin: 52px 135px;
   -moz-transform-origin: 52px 135px;
   -ms-transform-origin: 52px 135px;
   transform-origin: 52px 135px;
-  stroke: #f68f35;
   -webkit-transform: rotate(-40deg);
   -moz-transform: rotate(-40deg);
   -ms-transform: rotate(-40deg);
@@ -283,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  margin-top: 4rem; }
+  margin-top: 5rem; }
 
 h2 {
   font-size: 1.5rem;
@@ -300,5 +301,8 @@ strong {
 
 .naprej, .poslji {
   margin-top: 3rem; }
+
+.poslji {
+  margin-bottom: 1rem; }
 
 /*# sourceMappingURL=main.css.map */

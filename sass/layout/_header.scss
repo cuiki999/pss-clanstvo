@@ -1,5 +1,6 @@
 .nav-wrapper {
 	height: 100px;
+	display: flex;
 
 	@media #{$medium-and-down} {
 		height: 180px;
@@ -13,7 +14,7 @@
 .postani-clan {
 	color: $pirateGrey;
 	font-weight: 700;
-	float: right;
+	margin-left: auto;
 	font-size: 22px;
 	line-height: 23px;
 	text-align: right;
