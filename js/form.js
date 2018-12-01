@@ -31,8 +31,8 @@ let loopThroughBoxes = () => {
 	for (let i = 0; i < localSmall.length; i++) {
 		updateCheckboxes(localMain, localSmall[i]);
 	};
-	for (let i = 0; i < nationalSmall.length; i++) {
-		updateCheckboxes(nationalMain, nationalSmall[i]);
+	for (let j = 0; j < nationalSmall.length; j++) {
+		updateCheckboxes(nationalMain, nationalSmall[j]);
 	};
 }
 
