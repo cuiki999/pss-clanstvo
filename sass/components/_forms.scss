@@ -66,10 +66,41 @@ textarea.materialize-textarea {
   }
 }
 
+[type="checkbox"].filled-in.big {
+
+  &:not(:checked) {
+    + span:not(.lever):after { 
+      height: 25px;
+      width: 25px;
+    }
+  }
+
+  &:checked {
+    + span:not(.lever):before {
+      border-right: 2px solid $pirateOrange;
+      border-bottom: 2px solid $pirateOrange;
+      width: 10px;
+      height: 20px;
+      margin-left: -0.05rem;
+      margin-top: 0.1rem;
+      transform-origin: 100% 100%;
+    }
+
+    + span:not(.lever):after {
+      height: 25px;
+      width: 25px;
+    }
+  }
+}
+
+
 [type="checkbox"] {
   
   + span:not(.lever).footnote {
     font-size: 0.8rem;
+  }
 
+  + span:not(.lever).subtype {
+    margin-left: 0.3rem;
   }
 }

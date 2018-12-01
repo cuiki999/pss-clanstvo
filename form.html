@@ -37,7 +37,7 @@
 		<form class="pirate-form" action="#">
 			<div class="row">
         <div class="col s12">
-          Ime in priimek:
+          <span class="required">Ime in priimek:</span>
           <div class="input-field block">
             <input id="name-lastname" type="text">
           </div>
@@ -46,7 +46,7 @@
       
       <div class="row">
         <div class="col s12">
-          Datum rojstva:
+          <span class="required">Datum rojstva:</span>
           <div class="input-field block">
             <input id="date-of-birth" type="text" placeholder="dd. mm. llll">
           </div>
@@ -55,9 +55,9 @@
       
       <div class="row">
 		    <div class="col s12">
-			    Spol:
+			    <span class="required">Spol:</span>
           <label class="radio-container">
-            <input class= "with-gap" value="moski" type="radio" checked="checked" name="group1">
+            <input class= "with-gap" value="moski" type="radio" name="group1">
               <span class="radio-content">Moški</span>
           </label>
           <label class="radio-container">
@@ -69,13 +69,13 @@
       
       <div class="row">
         <div class="col s12 l8">
-          Stalno prebivališče:
+          <span class="required">Stalno prebivališče:</span>
           <div class="input-field block">
             <input id="address" type="text" placeholder="ulica, hišna številka">
           </div>
         </div>
         <div class="col s4 l3 offset-l1">
-          Poštna številka:
+          <span class="required">Poštna številka:<span class="required">
           <div class="input-field block">
             <input id="post-code" type="text" pattern="[0-9]{4}">
           </div>
@@ -84,7 +84,7 @@
       
       <div class="row">
         <div class="col s12">
-          Državljanstvo:
+          <span class="required">Državljanstvo:</span>
           <div class="input-field block">
             <input id="nationality" type="text">
           </div>
@@ -93,7 +93,7 @@
       
       <div class="row">
         <div class="col s12">
-          E-pošta:
+          <span class="required">E-pošta:</span>
           <div class="input-field block">
             <input id="email" type="email">
           </div>
@@ -103,7 +103,7 @@
       
       <div class="row">
         <div class="col s12">
-          Telefon:
+          <span class="not-required">Telefon:</span>
           <div class="input-field block">
             <input id="phone" type="tel" placeholder="(ni obvezen)">
           </div>
@@ -113,9 +113,9 @@
 	    
       <div class="row extra-space">
         <div class="col s12 m6">
-          Status:
+          <span class="required">Status:</span>
           <label class="radio-container">
-            <input class= "with-gap" value="student" type="radio" checked="checked" name="group2">
+            <input class= "with-gap" value="student" type="radio" name="group2">
               <span class="radio-content">Študent</span>
           </label>
           <label class="radio-container">
@@ -132,9 +132,9 @@
           </label>
         </div>
         <div class="col s12 m6 move-down">
-          <span class>Aktivno sodelovanje:</span>
+          <span class="required">Aktivno sodelovanje:</span>
           <label class="radio-container">
-            <input class= "with-gap" value="da" type="radio" checked="checked" name="group3">
+            <input class= "with-gap" value="da" type="radio" name="group3">
               <span class="radio-content">Da</span>
           </label>
           <label class="radio-container">
@@ -146,44 +146,44 @@
 
       <div class="row">
         <div class="col s12 tip-delovanja">
-          Tip delovanja:
+          <span class="not-required">Tip delovanja:</span>
         </div>
       </div>
       <div class="row">
         <div class="col s12 m6">
           <label class="checkbox-container">
-            <input type="checkbox" class="filled-in">
-            <span><strong>lokalno</strong></span>
+            <input type="checkbox" id="lokalno-main" class="filled-in big">
+            <span class="local-national"><strong>lokalno:</strong></span>
           </label>
           <label class="checkbox-container">
-            <input type="checkbox" class="filled-in">
-            <span>kandidatura</span>
+            <input type="checkbox" id="lokalno1" class="filled-in local-small">
+            <span class="subtype">kandidatura</span>
           </label>
           <label class="checkbox-container">
-            <input type="checkbox" class="filled-in">
-            <span>aktivizem</span>
+            <input type="checkbox" id="lokalno2" class="filled-in local-small">
+            <span class="subtype">aktivizem</span>
           </label>
           <label class="checkbox-container">
-            <input type="checkbox" class="filled-in">
-            <span>program</span>
+            <input type="checkbox" id="lokalno3" class="filled-in local-small">
+            <span class="subtype">program</span>
           </label>
         </div>
         <div class="col s12 m6">
           <label class="checkbox-container">
-            <input type="checkbox" class="filled-in">
-            <span class="nacionalno"><strong>nacionalno</strong></span>
+            <input type="checkbox" id="nacionalno-main" class="filled-in big">
+            <span class="local-national"><strong>nacionalno:</strong></span>
           </label>
           <label class="checkbox-container">
-            <input type="checkbox" class="filled-in">
-            <span>kandidatura</span>
+            <input type="checkbox" id="nacionalno1" class="filled-in national-small">
+            <span class="subtype">kandidatura</span>
           </label>
           <label class="checkbox-container">
-            <input type="checkbox" class="filled-in">
-            <span>aktivizem</span>
+            <input type="checkbox" id="nacionalno2" class="filled-in national-small">
+            <span class="subtype">aktivizem</span>
           </label>
           <label class="checkbox-container">
-            <input type="checkbox" class="filled-in">
-            <span>program</span>
+            <input type="checkbox" id="nacionalno3" class="filled-in national-small">
+            <span class="subtype">program</span>
           </label>
         </div>
       </div>
@@ -195,11 +195,11 @@
         <div class="col s12">
           <label class="checkbox-container">
             <input type="checkbox" class="filled-in">
-            <span class="footnote">S podpisom sprejemam program in statut stranke in izjavljam, da so vsi posredovani podatki resnični.</span>
+            <span class="footnote required">S podpisom sprejemam program in statut stranke in izjavljam, da so vsi posredovani podatki resnični.</span>
           </label>
           <label class="checkbox-container">
             <input type="checkbox" class="filled-in">
-            <span class="footnote">Podpisani dovoljujem uporabo podatkov za vodenje evidence članstva. Podatki, ki ste nam jih zaupali, so varovani in bodo uporabljeni izključno za potrebe delovanja stranke.</span>
+            <span class="footnote required">Podpisani dovoljujem uporabo podatkov za vodenje evidence članstva. Podatki, ki ste nam jih zaupali, so varovani in bodo uporabljeni izključno za potrebe delovanja stranke.</span>
           </label>          
         </div>
       </div>
@@ -208,15 +208,15 @@
       </div>
 
       <div class="row">
-      <div class="col s12 m4 offset-m9 l3 offset-l10">
-        <div class="container">
-          <a href="confirmation.html" class="btn pirate-orange poslji">
-            <span>Pošlji</span>
-            <i class="fas fa-caret-right right"></i>
-          </a>
+        <div class="col s12 m4 offset-m9 l3 offset-l10">
+          <div class="container">
+            <a href="confirmation.html" class="btn pirate-orange poslji">
+              <span>Pošlji</span>
+              <i class="fas fa-caret-right right"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
     </form>
   </div>
 
@@ -229,7 +229,7 @@
     </div>
   </footer>
 
-
+  <script src="js/form.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </body>

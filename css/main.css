@@ -260,8 +260,25 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   border: 2px solid #414042;
   background-color: #fff; }
 
+[type="checkbox"].filled-in.big:not(:checked) + span:not(.lever):after {
+  height: 25px;
+  width: 25px; }
+[type="checkbox"].filled-in.big:checked + span:not(.lever):before {
+  border-right: 2px solid #f68f35;
+  border-bottom: 2px solid #f68f35;
+  width: 10px;
+  height: 20px;
+  margin-left: -0.05rem;
+  margin-top: 0.1rem;
+  transform-origin: 100% 100%; }
+[type="checkbox"].filled-in.big:checked + span:not(.lever):after {
+  height: 25px;
+  width: 25px; }
+
 [type="checkbox"] + span:not(.lever).footnote {
   font-size: 0.8rem; }
+[type="checkbox"] + span:not(.lever).subtype {
+  margin-left: 0.3rem; }
 
 html {
   font-size: 15px; }
