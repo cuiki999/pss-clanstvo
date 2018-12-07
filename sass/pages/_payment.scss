@@ -1,3 +1,47 @@
-dl {
-	margin-top: 2rem;
+.orange-frame {
+	margin: 0.2rem auto;
+	border-radius: 4px;
+	background-color: $pirateOrange;
+	color: #000;
+
+	min-height: auto;
+	max-width: 28rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem 0 rgba(170, 170, 170, 0.8);
+
+	@media #{$medium-and-down} {
+		min-height: auto;
+		max-width: auto;
+	}
+
+	p {
+		padding: 1rem;
+	}
+}
+
+#payment-frame {
+	margin-top: 5rem;
+
+	label {
+		padding: 0.5rem;
+		border: 1px solid $pirateGrey;
+		border-radius: 4px;
+	}
+
+	dl {
+		margin-left: 2.5rem;
+	}
+
+	dd {
+		margin-bottom: 0.5rem;
+		margin-left: 0;
+	}
+
+	.radio-content {
+		color: #fff;
+	}
+
+	[type="radio"]:not(:checked) + span:before,
+	[type="radio"]:not(:checked) + span:after {
+		border: 2px solid #9b9b9b;
+	}
 }

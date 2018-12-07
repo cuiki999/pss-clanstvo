@@ -1,20 +1,21 @@
 .btn-large {
-	width:100%;
+	width: 100%;
+	white-space: nowrap;
 }
 
 .poslji-izjavo {
 	margin-top: 5rem;
 }
 
-.blue-frame {
+.black-frame {
+	color: #fff;
 	margin: 0.2rem;
 	border-radius: 4px;
-	min-height: 19rem;
-	box-shadow: 0.3rem 0.3rem 0.3rem 0 rgba(170, 170, 170, 0.8);
+	max-height: 20rem;
+	border: 1px solid black;
 
-	@media #{$medium-and-down} {
-		min-height: auto;
-		max-width: auto;
+	@media #{$small-and-down} {
+		max-height: 25rem;
 	}
 
 	p {
@@ -24,10 +25,17 @@
 			white-space: nowrap;
 		}
 	}
+
+	a {
+		color: #fff;
+	}
+
+	
 }
 
 .file-field {
-	
+	margin-top: -1rem;
+
 	.btn {
 		margin-left: 2rem;
 	}
@@ -35,4 +43,34 @@
 	.file-path-wrapper {
 		margin-right: 2rem;
 	}
+
+	.file-upload-message {
+		padding: 0.5rem 2rem;
+	}
+
+	#send-file {
+		font-weight: 700;
+	}
+
+	.fa-check {
+		text-align: right;
+		color: $pirateOrange;
+		font-size: 5rem;
+		float: right;
+		margin-right: 2rem;
+		margin-top: -1rem;
+		visibility: hidden;
+	}
+}
+
+.ali {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+	margin: 1rem auto;
+}
+
+.white-text {
+	color: #fff;
 }

@@ -64,9 +64,8 @@ strong {
 	font-weight: 700;
 }
 
-
-@media #{$large-and-up} {
-	.container {
+.container {
+	@media #{$large-and-up} {
 		width: 80%;
 	}
 }
@@ -75,10 +74,30 @@ strong {
 	height: 3rem;
 }
 
-.naprej, .poslji {
+.more-empty-space {
+	@media #{$large-and-up} {
+		height: 3rem;
+	}
+}
+
+.naprej, 
+.poslji {
 	margin-top: 3rem;
 }
 
 .poslji {
+	font-weight: bold;
+	
+	@media #{$large-and-up} {
+		margin-bottom: 3rem;
+	}
+}
+
+.skip {
 	margin-bottom: 1rem;
+}
+
+.to-the-right {
+	position: relative;
+	text-align: right;
 }

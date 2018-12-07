@@ -92,6 +92,12 @@
 
 #pirate-form {
   margin-top: 5rem; }
+  @media only screen and (min-width: 601px) and (max-width: 992px) {
+    #pirate-form {
+      margin-top: 3rem; } }
+  @media only screen and (max-width: 600px) {
+    #pirate-form {
+      margin-top: 1rem; } }
 
 #required-alert {
   background-color: #fcc8c2;
@@ -104,6 +110,10 @@
 @media only screen and (max-width: 992px) {
   #address {
     margin-bottom: 2.3rem; } }
+
+@media only screen and (max-width: 600px) {
+  .space-between-local-national {
+    margin-top: 2.3rem; } }
 
 .note {
   font-size: 0.8rem; }
@@ -168,32 +178,88 @@
   width: 0; }
 
 .btn-large {
-  width: 100%; }
+  width: 100%;
+  white-space: nowrap; }
 
 .poslji-izjavo {
   margin-top: 5rem; }
 
-.blue-frame {
+.black-frame {
+  color: #fff;
   margin: 0.2rem;
   border-radius: 4px;
-  min-height: 19rem;
+  max-height: 20rem;
+  border: 1px solid black; }
+  @media only screen and (max-width: 600px) {
+    .black-frame {
+      max-height: 25rem; } }
+  .black-frame p {
+    padding: 2rem; }
+    .black-frame p span {
+      white-space: nowrap; }
+  .black-frame a {
+    color: #fff; }
+
+.file-field {
+  margin-top: -1rem; }
+  .file-field .btn {
+    margin-left: 2rem; }
+  .file-field .file-path-wrapper {
+    margin-right: 2rem; }
+  .file-field .file-upload-message {
+    padding: 0.5rem 2rem; }
+  .file-field #send-file {
+    font-weight: 700; }
+  .file-field .fa-check {
+    text-align: right;
+    color: #f68f35;
+    font-size: 5rem;
+    float: right;
+    margin-right: 2rem;
+    margin-top: -1rem;
+    visibility: hidden; }
+
+.ali {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin: 1rem auto; }
+
+.white-text {
+  color: #fff; }
+
+.orange-frame {
+  margin: 0.2rem auto;
+  border-radius: 4px;
+  background-color: #f68f35;
+  color: #000;
+  min-height: auto;
+  max-width: 28rem;
   box-shadow: 0.3rem 0.3rem 0.3rem 0 rgba(170, 170, 170, 0.8); }
   @media only screen and (max-width: 992px) {
-    .blue-frame {
+    .orange-frame {
       min-height: auto;
       max-width: auto; } }
-  .blue-frame p {
-    padding: 2rem; }
-    .blue-frame p span {
-      white-space: nowrap; }
+  .orange-frame p {
+    padding: 1rem; }
 
-.file-field .btn {
-  margin-left: 2rem; }
-.file-field .file-path-wrapper {
-  margin-right: 2rem; }
-
-dl {
-  margin-top: 2rem; }
+#payment-frame {
+  margin-top: 5rem; }
+  #payment-frame label {
+    padding: 0.5rem;
+    border: 1px solid #414042;
+    border-radius: 4px; }
+  #payment-frame dl {
+    margin-left: 2.5rem; }
+  #payment-frame dd {
+    margin-bottom: 0.5rem;
+    margin-left: 0; }
+  #payment-frame .radio-content {
+    color: #fff; }
+  #payment-frame [type="radio"]:not(:checked) + span:before,
+  #payment-frame [type="radio"]:not(:checked) + span:after {
+    border: 2px solid #9b9b9b; }
 
 #chev-right {
   margin: 2.8rem 0.5rem 0 1rem; }
@@ -244,7 +310,8 @@ dl {
   background-color: #c0e8d0; }
 
 ::placeholder {
-  color: #414042; }
+  color: #414042;
+  -webkit-color: #a8a8a8; }
 
 .input-field {
   margin-bottom: 0rem; }
@@ -350,13 +417,29 @@ strong {
 @media only screen and (min-width: 993px) {
   .container {
     width: 80%; } }
+
 .empty-space {
   height: 3rem; }
 
-.naprej, .poslji {
+@media only screen and (min-width: 993px) {
+  .more-empty-space {
+    height: 3rem; } }
+
+.naprej,
+.poslji {
   margin-top: 3rem; }
 
 .poslji {
+  font-weight: bold; }
+  @media only screen and (min-width: 993px) {
+    .poslji {
+      margin-bottom: 3rem; } }
+
+.skip {
   margin-bottom: 1rem; }
+
+.to-the-right {
+  position: relative;
+  text-align: right; }
 
 /*# sourceMappingURL=main.css.map */

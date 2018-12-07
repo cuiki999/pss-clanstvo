@@ -18,8 +18,10 @@
 
   <nav class="nav-wrapper white">
     <div class="container" id="header">
-      <a href="index.html">
+      <a href="https://piratskastranka.si">
         <img src="https://piratskastranka.si/wp-content/uploads/2018/02/pirati-logo.png" class="brand-logo" alt="Piratska stranka (Pirati)">
+      </a>
+      <a href="index.html">
         <p class="postani-clan pirate-grey-text"><span>VČLANI SE V</span> <span>PIRATSKO STRANKO!</span></p>
       </a>
     </div>
@@ -33,40 +35,64 @@
 	</div>
 
   <div class="container">
-    <h1>Plačilo članarine</h1>
-    <p><strong>Članarina velja 12 mesecev od dneva nastopa članstva.</strong></p>
-    <dl>
-			<dt><strong>Namen</strong></dt>
-			<dd>Članarina</dd>
-			<dt><strong>TRR</strong></dt>
-			<dd>SI56 6100 0000 4292 403</dd>
-			<dt><strong>BIC</strong></dt>
-			<dd>HDELSI22XXX</dd>
-			<dt><strong>Sklic</strong></dt>
-			<dd>SI00 00100</dd>
-			<dt><strong>Koda namena</strong></dt>
-			<dd>OTHR</dd>
-			<dt><strong>Znesek</strong></dt>
-			<dd>10€ za študente, brezposelne, invalide in upokojence<br>
-			20€ za zaposlene</dd>
-		</dl>
+    <h1 class="center">Plačilo članarine</h1>
+    
+    <p class="center"><strong>Članarina velja 12 mesecev od dneva nastopa članstva.</strong></p>
 
-		<div class="row">
-      <div class="col s12 m4 offset-m9 l3 offset-l10">
-        <div class="container">
-          <a href="finish.html" class="btn pirate-orange naprej">
-            <span>Naprej</span>
-            <i class="fas fa-caret-right right"></i>
-          </a>
-        </div>
+    <div class="orange-frame">
+      <p><strong>Znesek:</strong><br>
+      10€ za študente, brezposelne, invalide in upokojence<br>
+      20€ za zaposlene</p>
+    </div>
+    
+    <div id="payment-frame">
+      <p>Plačaj preko položnice ali s PayPalom:</p>
+      <label class="radio-container pirate-grey">
+        <input id="poloznica-option" class="with-gap" value="poloznica" type="radio" name="nacin-placila">
+        <span class="radio-content"><strong>Plačilni nalog UPN/SEPA [?]</strong></span>
+      </label>
+      <div id="poloznica-frame" style="display:none">
+        <dl>
+          <dt><strong>Namen</strong></dt>
+          <dd>Članarina</dd>
+          <dt><strong>TRR</strong></dt>
+          <dd>SI56 6100 0000 4292 403</dd>
+          <dt><strong>BIC</strong></dt>
+          <dd>HDELSI22XXX</dd>
+          <dt><strong>Sklic</strong></dt>
+          <dd>SI00 00100</dd>
+          <dt><strong>Koda namena</strong></dt>
+          <dd>OTHR</dd>
+          <dt><strong>Znesek</strong></dt>
+          <dd>10€ za študente, brezposelne, invalide in upokojence<br>
+          20€ za zaposlene</dd>
+        </dl>
+      </div>
+      <label class="radio-container pirate-grey">
+        <input id="paypal-option" class="with-gap" value="paypal" type="radio" name="nacin-placila">
+        <span class="radio-content"><strong>PayPal</strong></span>
+      </label>
+      <div id="paypal-frame" style="display:none">
+        <figure>
+          <img src="images/paypal_logo.jpg">
+        </figure>
       </div>
     </div>
-  </div>
 
-  
+    <div class="to-the-right">
+      <a href="finish.html" class="btn pirate-orange naprej skip">
+        <span>Opravljeno</span>
+        <i class="fas fa-caret-right right"></i>
+      </a>
+      <a href="finish.html">
+        <br>
+        <span>Preskoči korak</span>
+      </a>
+    </div>
 
-  <div class="empty-space">
-  </div>
+    <div class="empty-space">
+    </div>
+	</div>
 
   <footer class="page-footer grey darken-3">
     <div class="footer-copyright">
@@ -74,7 +100,7 @@
     </div>
   </footer>
 
-
+  <script src="js/payment.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
 </body>

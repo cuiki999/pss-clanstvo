@@ -1,6 +1,9 @@
 ::placeholder {
   color: $pirateGrey;
+  -webkit-color: #a8a8a8;
 }
+
+
 
 .input-field {
   margin-bottom: 0rem;
@@ -37,7 +40,6 @@ textarea.materialize-textarea {
 }
 
 // RADIO BUTTONS
-
 [type="radio"]:checked + span:after,
 [type="radio"].with-gap:checked + span:before,
 [type="radio"].with-gap:checked + span:after {
