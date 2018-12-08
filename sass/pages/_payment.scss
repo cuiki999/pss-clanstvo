@@ -1,12 +1,8 @@
-.orange-frame {
-	margin: 0.2rem auto;
-	border-radius: 4px;
-	background-color: $pirateOrange;
-	color: #000;
-
+.orange-frame { 
+	margin: 0 auto;	
+	border-left: 0.5rem solid $pirateOrange;
 	min-height: auto;
 	max-width: 28rem;
-	box-shadow: 0.3rem 0.3rem 0.3rem 0 rgba(170, 170, 170, 0.8);
 
 	@media #{$medium-and-down} {
 		min-height: auto;
@@ -23,8 +19,6 @@
 
 	label {
 		padding: 0.5rem;
-		border: 1px solid $pirateGrey;
-		border-radius: 4px;
 	}
 
 	dl {
@@ -37,11 +31,8 @@
 	}
 
 	.radio-content {
-		color: #fff;
+		color: $pirateGrey;
 	}
 
-	[type="radio"]:not(:checked) + span:before,
-	[type="radio"]:not(:checked) + span:after {
-		border: 2px solid #9b9b9b;
-	}
+
 }

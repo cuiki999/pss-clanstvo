@@ -26,6 +26,12 @@
 .pirate-grey-text {
   color: #414042 !important; }
 
+.pirate-light-grey {
+  background-color: #f1f2f2 !important; }
+
+.pirate-light-grey-text {
+  color: #f1f2f2 !important; }
+
 .progress-blue {
   background-color: #c0e8d0 !important; }
 
@@ -184,21 +190,20 @@
 .poslji-izjavo {
   margin-top: 5rem; }
 
-.black-frame {
-  color: #fff;
+.grey-option-frame {
+  color: #414042;
   margin: 0.2rem;
-  border-radius: 4px;
   max-height: 20rem;
-  border: 1px solid black; }
+  border: 1px solid #f1f2f2; }
   @media only screen and (max-width: 600px) {
-    .black-frame {
+    .grey-option-frame {
       max-height: 25rem; } }
-  .black-frame p {
+  .grey-option-frame p {
     padding: 2rem; }
-    .black-frame p span {
+    .grey-option-frame p span {
       white-space: nowrap; }
-  .black-frame a {
-    color: #fff; }
+  .grey-option-frame a {
+    color: #414042; }
 
 .file-field {
   margin-top: -1rem; }
@@ -206,6 +211,8 @@
     margin-left: 2rem; }
   .file-field .file-path-wrapper {
     margin-right: 2rem; }
+  .file-field .grey-text2 {
+    color: #414042; }
   .file-field .file-upload-message {
     padding: 0.5rem 2rem; }
   .file-field #send-file {
@@ -222,21 +229,14 @@
 .ali {
   font-size: 2rem;
   font-weight: 700;
-  color: #000;
   text-align: center;
   margin: 1rem auto; }
 
-.white-text {
-  color: #fff; }
-
 .orange-frame {
-  margin: 0.2rem auto;
-  border-radius: 4px;
-  background-color: #f68f35;
-  color: #000;
+  margin: 0 auto;
+  border-left: 0.5rem solid #f68f35;
   min-height: auto;
-  max-width: 28rem;
-  box-shadow: 0.3rem 0.3rem 0.3rem 0 rgba(170, 170, 170, 0.8); }
+  max-width: 28rem; }
   @media only screen and (max-width: 992px) {
     .orange-frame {
       min-height: auto;
@@ -247,19 +247,14 @@
 #payment-frame {
   margin-top: 5rem; }
   #payment-frame label {
-    padding: 0.5rem;
-    border: 1px solid #414042;
-    border-radius: 4px; }
+    padding: 0.5rem; }
   #payment-frame dl {
     margin-left: 2.5rem; }
   #payment-frame dd {
     margin-bottom: 0.5rem;
     margin-left: 0; }
   #payment-frame .radio-content {
-    color: #fff; }
-  #payment-frame [type="radio"]:not(:checked) + span:before,
-  #payment-frame [type="radio"]:not(:checked) + span:after {
-    border: 2px solid #9b9b9b; }
+    color: #414042; }
 
 #chev-right {
   margin: 2.8rem 0.5rem 0 1rem; }
