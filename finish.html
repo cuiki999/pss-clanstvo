@@ -27,19 +27,96 @@
 		</div>
 	</nav>
 
-  <div class="container green-bar">
-    <span>4/4</span>
-    <div class="progress">
-      <div class="determinate green" style="width: 100%"></div>
+  <div id="all-steps-finished">
+    <div class="progress-bar">
+      <div class="circle done">
+        <span id="label1" class="label"><strong>&#10003;</strong></span>
+        <div class="title-box">
+          <span class="title">Izjava</span>
+        </div>
+      </div>
+      <span class="bar"></span>
+      <div class="circle done">
+        <span id="label2" class="label"><strong>&#10003;</strong></span>
+        <div class="title-box">
+          <span class="title">Potrditev</span>
+        </div>
+      </div>
+      <span class="bar"></span>
+      <div class="circle done">
+        <span id="label3" class="label"><strong>&#10003;</strong></span>
+        <div class="title-box">
+          <span class="title">Plačilo</span>
+        </div>
+      </div>
+      <span class="bar"></span>
+      <div class="circle done">
+        <span id="label4" class="label"><strong>&#10003;</strong></span>
+        <div class="title-box">
+          <span class="title">Zaključek</span>
+        </div>
+      </div>
     </div>
-	</div>
 
-  <div class="container">
-    <h1 class="center">Zaključek</h1>
-    <p>[Hvala za včlanitev v stranko. Nekaj v zvezi z izpolnitvijo vseh korakov, linki na prejšnje strani, link do programa]</p>
+    <div class="container">
+      <h1 class="center">[fname], dobrodošel med Pirate!</h1>
+      <img src="images/placeholder.jpg" class="finish-pic">
+      <p>Hvala za včlanitev v stranko! Ko bomo pregledali tvoje podatke, boš dobil e-pošto s potrditvijo članstva v Piratski stranki Slovenije, do takrat pa te vabimo, da si prebereš <a href="https://piratskastranka.si/programi/splosni" target="_blank">naš program.</a></p>
+      <p>Za vsa vprašanja smo na voljo po e-pošti: <a href="mailto:info@piratskastranka.si" target="_blank">info@piratskastranka.si</a></p>
 
-    <div class="empty-space"></div>
-  </div>  
+      <div class="empty-space"></div>
+      <button id="scenario2" type="button" class="btn pirate-orange">(developer) scenario 2</button>
+      <div class="empty-space"></div>
+    </div>
+  </div>
+
+  <div id="two-steps-skipped" style="display:none">
+    <div class="progress-bar">
+      <div class="circle done">
+        <span id="label1" class="label"><strong>&#10003;</strong></span>
+        <div class="title-box">
+          <span class="title">Izjava</span>
+        </div>
+      </div>
+      <span class="bar"></span>
+      <div class="circle">
+        <span id="label2" class="label"><strong>2</strong></span>
+        <div class="title-box">
+          <span class="title">Potrditev</span>
+        </div>
+      </div>
+      <span class="bar"></span>
+      <div class="circle">
+        <span id="label3" class="label"><strong>3</strong></span>
+        <div class="title-box">
+          <span class="title">Plačilo</span>
+        </div>
+      </div>
+      <span class="bar"></span>
+      <div class="circle active">
+        <span id="label4" class="label"><strong>4</strong></span>
+        <div class="title-box">
+          <span class="title">Zaključek</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="center">Do včlanitve te čakata še dva koraka!</h1>
+      <img src="images/placeholder.jpg" class="finish-pic">
+      <p>Hvala, da si se odločil za članstvo v Piratski stranki Slovenije! Preden postaneš naš član, te prosimo, da izpolneš še dva koraka:</p>
+      <ul class="list mini-list">
+        <li><a href="confirmation.html">potrditev članstva s podpisom pristopne izjave</a></li>
+        <li><a href="payment">plačilo članarine.</a></li>
+      </ul>
+      <p>Vabimo te tudi, da si prebereš <a href="https://piratskastranka.si/programi/splosni" target="_blank">naš program.</a></p>
+      <p>Za vsa vprašanja smo na voljo po e-pošti: <a href="mailto:info@piratskastranka.si" target="_blank">info@piratskastranka.si</a></p>
+
+      <div class="empty-space"></div>
+      <button id="scenario1" type="button" class="btn pirate-orange">(developer) scenario 1</button>
+      <div class="empty-space"></div>
+    </div>  
+  </div>
 
   <footer class="page-footer grey darken-3">
     <div class="footer-copyright">
@@ -47,7 +124,7 @@
     </div>
   </footer>
 
-
+  <script src="js/finish_page.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </body>

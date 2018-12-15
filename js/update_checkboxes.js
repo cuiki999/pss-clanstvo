@@ -1,39 +1,36 @@
-let localMain = document.getElementById('lokalno-main');
-let localSmall = document.querySelectorAll('.local-small');
+let localMain = document.getElementById('lokalno-main')
+let localSmall = document.querySelectorAll('.local-small')
 
-let nationalMain = document.getElementById('nacionalno-main');
-let nationalSmall = document.querySelectorAll('.national-small');
-
+let nationalMain = document.getElementById('nacionalno-main')
+let nationalSmall = document.querySelectorAll('.national-small')
 
 let updateCheckboxes = (bigBox, smallBox) => {
-	
-	smallBox.addEventListener('change', (event) => {
-		if(event.target.checked) {
-			let checkBig = () => {
-				bigBox.checked = true;
-			}
-			checkBig();
-		}
-	});
+  smallBox.addEventListener('change', (event) => {
+    if (event.target.checked) {
+      let checkBig = () => {
+        bigBox.checked = true
+      }
+      checkBig()
+    }
+  })
 
-	bigBox.addEventListener('change', (event) => {
-		if (!event.target.checked) {
-			let uncheckSmall = () => {
-				smallBox.checked = false;
-			}
-			uncheckSmall();
-		}
-	});
+  bigBox.addEventListener('change', (event) => {
+    if (!event.target.checked) {
+      let uncheckSmall = () => {
+        smallBox.checked = false
+      }
+      uncheckSmall()
+    }
+  })
 }
-
 
 let loopThroughBoxes = () => {
-	for (let i = 0; i < localSmall.length; i++) {
-		updateCheckboxes(localMain, localSmall[i]);
-	};
-	for (let j = 0; j < nationalSmall.length; j++) {
-		updateCheckboxes(nationalMain, nationalSmall[j]);
-	};
+  for (let i = 0; i < localSmall.length; i++) {
+    updateCheckboxes(localMain, localSmall[i])
+  };
+  for (let j = 0; j < nationalSmall.length; j++) {
+    updateCheckboxes(nationalMain, nationalSmall[j])
+  };
 }
 
-loopThroughBoxes();
+loopThroughBoxes()

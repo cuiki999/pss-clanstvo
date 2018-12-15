@@ -41,8 +41,12 @@ body {
 
 a {
 	text-decoration: underline;
-	font-weight: bold;
 	color: $pirateGrey;
+
+	&:hover {
+		text-decoration: none;
+		color: $pirateOrange;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,7 +56,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 2.5rem;
 	font-weight: 800;
-	margin-top: 5rem;
+	margin-top: 6rem;
+	margin-bottom: 2rem;
 }
 
 h2 {
@@ -83,10 +88,13 @@ strong {
 .naprej, 
 .poslji {
 	margin-top: 3rem;
+
+	&:hover {
+		color: #fff;
+	}
 }
 
 .poslji {
-	font-weight: bold;
 	
 	@media #{$large-and-up} {
 		margin-bottom: 3rem;

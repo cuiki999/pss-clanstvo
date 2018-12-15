@@ -1,6 +1,24 @@
 .btn-large {
-	width: 100%;
+	width: 17rem;
 	white-space: nowrap;
+	margin-bottom: 1rem;
+	/*
+	border: 1px solid $pirateOrange;
+	border-radius: 4px;
+	color: $pirateOrange;
+	background-color: #fff;
+	box-shadow: none;
+
+	&:hover {
+		color: #fff;
+		background-color: $pirateOrange;
+		box-shadow: none;
+	}
+	*/
+
+	&:hover {
+		color: #fff;
+	}
 }
 
 .poslji-izjavo {
@@ -49,10 +67,6 @@
 
 	.file-upload-message {
 		padding: 0.5rem 2rem;
-	}
-
-	#send-file {
-		font-weight: 700;
 	}
 
 	.fa-check {
