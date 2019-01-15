@@ -56,6 +56,14 @@
             }
         }
 
+        &.skipped {
+
+            .label {
+                color: #fff;
+                background: #fddd7b;
+            }
+        }
+
         &.active {
             
             .label {
