@@ -28,33 +28,33 @@
   </nav>
 
   <div class="progress-bar">
-    <div class="circle done">
-      <span id="label1" class="label"><strong>&#10003;</strong></span>
+    <a href="form.html" id="conf-c-1" class="circle">
+      <span id="conf-l-1" class="label">1</span>
       <div class="title-box">
         <span class="title">Izjava</span>
       </div>
-    </div>
+    </a>
     <span class="bar"></span>
-    <div class="circle active">
-      <span id="label2" class="label">2</span>
+    <a href="confirmation.html" id="conf-c-2" class="circle">
+      <span id="conf-l-2" class="label">2</span>
       <div class="title-box">
         <span class="title">Potrditev</span>
       </div>
-    </div>
+    </a>
     <span class="bar"></span>
-    <div class="circle">
-      <span id="label3" class="label">3</span>
+    <a href="payment.html" id="conf-c-3" class="circle">
+      <span id="conf-l-3" class="label">3</span>
       <div class="title-box">
         <span class="title">Plačilo</span>
       </div>
-    </div>
+    </a>
     <span class="bar"></span>
-    <div class="circle">
-      <span id="label4" class="label">4</span>
+    <a href="finish.html" id="conf-c-4" class="circle">
+      <span id="conf-l-4" class="label">4</span>
       <div class="title-box">
         <span class="title">Zaključek</span>
       </div>
-    </div>
+    </a>
   </div>
 
   <div class="container">
@@ -120,11 +120,11 @@
       
       
     <div class="to-the-right">
-      <a href="payment.html" class="btn pirate-orange naprej skip">
+      <a href="payment.html" id="send-confirmation" class="btn pirate-orange naprej skip">
         <span>Opravljeno</span>
         <i class="fas fa-caret-right right"></i>
       </a>
-      <a href="payment.html">
+      <a href="payment.html" id="skip-confirmation">
         <br>
         <span>Preskoči korak</span>
       </a>
@@ -142,8 +142,8 @@
     </div>
   </footer>
 
+  <script src="js/progress_tracks/progress_track_conf.js"></script>
   <script src="js/confirmation.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
 </body>
 

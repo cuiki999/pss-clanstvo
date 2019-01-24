@@ -16,6 +16,7 @@
 
     .circle {
         box-sizing: border-box;
+        text-decoration: none;
 
         .label {
             display: inline-block;
@@ -53,6 +54,10 @@
             .label {
                 color: #fff;
                 background: #59c8e8;
+
+                &:hover {
+                background: #4bafcc;
+                }
             }
         }
 
@@ -61,6 +66,10 @@
             .label {
                 color: #fff;
                 background: #fddd7b;
+
+                &:hover {
+                background: #fca153;
+                }
             }
         }
 
@@ -69,6 +78,10 @@
             .label {
                 color: #fff;
                 background: $pirateOrange;
+
+                &:hover {
+                background: #fca153;
+                }
             }
 
             .title {
