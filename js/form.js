@@ -104,8 +104,26 @@ let displayMessageForInvalidInput = () => {
   }
 }
 
+// save the name so that you can use it on the finishing page, addressing the new member by first name
+let saveName = () => {
+  let nameValue = document.getElementById('name-lastname').value;
+  let stringSplit = nameValue.split(' ');
+  let newNameValue = stringSplit[0];
+  localStorage.setItem('name', newNameValue);
+}
+
+let saveGender = () => {
+  if (requiredRadio0[1].checked) {
+    localStorage.setItem('gender', 'female')
+  } else {
+    localStorage.setItem('gender', 'male')
+  }
+}
+
 sendButton.addEventListener('click', function (event) {
   readyToSend = true
+  // this is an indication that this step is done (so the circle turns blue), unless you rewrite it in the 'else' statement below
+  localStorage.setItem('form', 'ok')
 
   checkIfTextInput()
   checkIfRadioInput(requiredRadio0, 0)
@@ -113,12 +131,14 @@ sendButton.addEventListener('click', function (event) {
   checkIfRadioInput(requiredRadio2, 2)
   checkIfCheckboxes(requiredCheckbox1, 0)
   checkIfCheckboxes(requiredCheckbox2, 1)
+  saveName()
+  saveGender()
 
   if (readyToSend === true) {
     pirateForm.submit()
     window.location.href = 'confirmation.html'
   } else {
-    // event.preventDefault();
+    localStorage.setItem('form', 'skip')
     requiredAlert.style.visibility = 'visible'
     displayMessageForInvalidInput()
     window.location.href = '#form-title'
