@@ -18,24 +18,24 @@ let payL4 = document.getElementById('pay-l-4');
 let checkIfActiveCircle = () => {
   if (localStorage.getItem('pay') !== 'ok') {
     localStorage.setItem('pay', 'skip');
-    payC3.classList.add("active");
+    payC3.classList.add('active');
   } else {
-    payC3.classList.add("done");
-    payL3.innerHTML = "&#10003"
+    payC3.classList.add('done');
+    payL3.innerHTML = '&#10003';
   }
-}
+};
 
 checkIfActiveCircle();
 
 // depending on whether certain steps have been skipped or done, the circles get the appropriate classes for this particular html page
 let giveClass = (page, circle, label) => {
   if (localStorage.getItem(page) === 'ok') {
-    circle.classList.add("done");
-    label.innerHTML = "&#10003"
+    circle.classList.add('done');
+    label.innerHTML = '&#10003';
   }
 
   if (localStorage.getItem(page) === 'skip') {
-    circle.classList.add("skipped");
+    circle.classList.add('skipped');
   }
 };
 
@@ -46,15 +46,15 @@ giveClass('fin', payC4, payL4);
 // if a step hasn't been accessed yet, the link to it becomes deactivated
 let disableLink = (page, circle) => {
   if (localStorage.getItem(page) === null) {
-    circle.addEventListener('click', function(event) {
+    circle.addEventListener('click', function (event) {
       event.preventDefault();
     });
 
-    circle.addEventListener('mouseover', function(event) {
+    circle.addEventListener('mouseover', function (event) {
       circle.style.cursor = 'default';
     });
   }
-}
+};
 
 disableLink('form', payC1);
 disableLink('conf', payC2);

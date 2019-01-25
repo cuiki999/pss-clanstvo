@@ -22,7 +22,7 @@ let outputName = () => {
   } else {
     customName.innerHTML = firstName + ', d';
   }
-}
+};
 
 outputName();
 
@@ -30,12 +30,12 @@ let outputGender = () => {
   let gender = localStorage.getItem('gender');
   if (gender === 'female') {
     customGender1.innerHTML = 'obrodošla';
-    customGender2.innerHTML = 'dobila'
+    customGender2.innerHTML = 'dobila';
   } else if (gender === 'male') {
     customGender1.innerHTML = 'obrodošel';
     customGender2.innerHTML = 'dobil';
   }
-}
+};
 
 outputGender();
 
@@ -56,9 +56,9 @@ let countSteps = () => {
     stepCounter++;
     payListItem.style.display = 'list-item';
   }
-}
+};
 
-countSteps()
+countSteps();
 
 let changeMessageWithStepCount = () => {
   if (stepCounter === 1) {
@@ -73,6 +73,6 @@ let changeMessageWithStepCount = () => {
   } else {
     stepsLeft1.innerHTML = 'hmmm';
   }
-}
+};
 
 changeMessageWithStepCount();
