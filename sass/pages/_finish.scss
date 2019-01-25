@@ -11,3 +11,15 @@
 .mini-list {
 	margin-left: 2rem;
 }
+
+#clear-storage {
+    text-decoration: underline;
+    color: $pirateGrey;
+    cursor: pointer;
+    font-size: 0.8rem;
+
+    &:hover {
+        text-decoration: none;
+        color: $pirateOrange;
+    }
+}

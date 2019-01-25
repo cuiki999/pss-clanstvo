@@ -64,5 +64,9 @@ disableLink('pay', finC3);
 
 // for development
 clearStorage.addEventListener('click', function () {
-  localStorage.clear();
+  let clearMessage = confirm('Vsi podatki bodo pobrisani. Želiš nadaljevati?')
+  if (clearMessage === true) {
+    localStorage.clear();
+    window.location.href = 'index.html';
+  }
 });

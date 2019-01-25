@@ -1,0 +1,10 @@
+- (note to self) transpilaj, da deluje v starih browserjih
+
+- backend poskrbi za ustvarjanje izjave v .pdf:
+  * èe je izjava uspešno ustvarjena in na voljo za prenos -> display #form-successful (v confirmation.html)
+  * èe izjava ni ustvarjena, npr. èe uporabnik preskoèi ta korak -> display #form-unsuccessful (v confirmation.html)
+  * gumb 'konèano' (v confirmation.html) pošlje izjavo v backend
+
+- naj nekdo pregleda, èe je vse besedilo smiselno, in popravi/doda vse, kar je oznaèeno z rdeèo barvo v index.html
+
+- naj nekdo testira, èe upload s kamero dela na iOS-u (jaz ga nimam)

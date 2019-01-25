@@ -286,6 +286,15 @@
 .mini-list {
   margin-left: 2rem; }
 
+#clear-storage {
+  text-decoration: underline;
+  color: #414042;
+  cursor: pointer;
+  font-size: 0.8rem; }
+  #clear-storage:hover {
+    text-decoration: none;
+    color: #f68f35; }
+
 #chev-right {
   margin: 2.8rem 0.5rem 0 1rem; }
 

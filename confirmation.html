@@ -59,17 +59,25 @@
 
   <div class="container">
     <h1 class="center">Potrditev</h1>
-    <p class="center">Odpri izpolnjeno .pdf izjavo s klikom na spodnji gumb.</p>
-    <div class="center">
-      <a href="#" target="_blank" class="btn pirate-orange btn-large center">
-        <span>
-        PRENESI .PDF
-        </span>
-      </a> 
-      <a id="redo-form" href="form.html">
-        <br>
-        <span>Popravi podatke</span>
-      </a>  
+    <div id="form-successful">
+      <p class="center">Odpri izpolnjeno .pdf izjavo s klikom na spodnji gumb.</p>
+      <div class="center">
+        <a href="#" target="_blank" class="btn pirate-orange btn-large center">
+          <span>
+          PRENESI .PDF
+          </span>
+        </a> 
+        <a id="redo-form" href="form.html">
+          <br>
+          <span>Popravi podatke</span>
+        </a>  
+      </div>
+    </div>
+
+    <!-- see confirmation.js - toggleSuccessfulUnsuccessful() - this is just a mock -->
+    <!-- the toggling should be done on BACKEND - if the form is processed and created in .pdf, this div is not displayed, otherwise the div above is not displayed and this one is -->
+    <div id="form-unsuccessful" style="display:none">
+      <p>Tvoje izjave nam ni uspelo naložiti. Če si jo <strong>izpolnil/-a</strong> in <strong>prenesel/-la</strong> že prej, lahko <strong>nadaljuješ</strong> s pošiljanjem izjave, drugače pa se prosim vrni na <a href="form.html">prejšnjo stran.</a></p>
     </div>
 
     <h2 class="poslji-izjavo">Pošlji izjavo</h2>

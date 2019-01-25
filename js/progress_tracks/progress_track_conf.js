@@ -71,8 +71,12 @@ disableLink('fin', confC4);
 
 // if you finish the step, the local storage gets the value 'ok' for that step so that you can use it later
 doneConf.addEventListener('click', function (event) {
-  localStorage.setItem('form', 'ok');
   localStorage.setItem('conf', 'ok');
+  localStorage.removeItem('missingForm');
+  if (localStorage.getItem('form') === 'skip') {
+    localStorage.setItem('form', 'ok');
+    localStorage.setItem('missingForm', 'missing');
+  }
   if (localStorage.getItem('pay') === 'ok') {
     event.preventDefault();
     window.location.href = 'finish.html';
