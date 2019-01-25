@@ -1,4 +1,4 @@
-// This code takes care of addressing the new (successfully enrolled) member by their first name and their gender. If there is no data available from form.html, the default gender is male, and the first name gets left out.
+// This code takes care of addressing the new (successfully enrolled) member by their first name and their gender. If there is no data available from form.html, the default gender is male and the first name gets left out.
 
 // This code also takes care of displaying the steps that the user still has to take before they become a full member.
 
@@ -70,8 +70,6 @@ let changeMessageWithStepCount = () => {
   } else if (stepCounter === 3) {
     stepsLeft1.innerHTML = 'Do včlanitve te čakajo še trije koraki!';
     stepsLeft2.innerHTML = 'tri korake';
-  } else {
-    stepsLeft1.innerHTML = 'hmmm';
   }
 };
 

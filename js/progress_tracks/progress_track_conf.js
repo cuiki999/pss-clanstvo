@@ -27,6 +27,15 @@ let checkIfActiveCircle = () => {
 
 checkIfActiveCircle();
 
+// if you go through to the finish, completing all the steps, but then decide to retake the form, the finish button should go back to being yellow until you confirm the form
+let changeFinishAfterRetaking = () => {
+  if (localStorage.getItem('fin') === 'ok' && localStorage.getItem('conf') === 'skip') {
+    localStorage.setItem('fin', 'skip');
+  }
+};
+
+changeFinishAfterRetaking();
+
 // depending on whether certain steps have been skipped or done, the circles get the appropriate classes for this particular html page
 let giveClass = (page, circle, label) => {
   if (localStorage.getItem(page) === 'ok') {
