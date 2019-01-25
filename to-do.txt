@@ -8,3 +8,5 @@
 - naj nekdo pregleda, èe je vse besedilo smiselno, in popravi/doda vse, kar je oznaèeno z rdeèo barvo v index.html
 
 - naj nekdo testira, èe upload s kamero dela na iOS-u (jaz ga nimam)
+
+- èe ima kdo ideje za izboljšat dizajn, na dan z njimi :)
