@@ -74,7 +74,7 @@
       </div>
     </div>
 
-    <!-- see confirmation.js - toggleSuccessfulUnsuccessful() - this is just a mock -->
+    <!-- see confirmation.js: toggleSuccessfulUnsuccessful() - however, this is just a mock and it doesn't work perfectly at all -->
     <!-- the toggling should be done on BACKEND - if the form is processed and created in .pdf, this div is not displayed, otherwise the div above is not displayed and this one is -->
     <div id="form-unsuccessful" style="display:none">
       <p>Tvoje izjave nam ni uspelo naložiti. Če si jo <strong>izpolnil/-a</strong> in <strong>prenesel/-la</strong> že prej, lahko <strong>nadaljuješ</strong> s pošiljanjem izjave, drugače pa se prosim vrni na <a href="form.html">prejšnjo stran.</a></p>
@@ -107,7 +107,7 @@
       </p>
     </div>
 
-    <div id="phone-upload" class="grey-option-frame pirate-light-grey">
+    <div id="phone-upload" class="grey-option-frame pirate-light-grey" style="display:none">
       <p>Izjavo najprej <strong>natisni</strong> in <strong>podpiši</strong>.<br><br>
         Če si na mobilnem telefonu, pritisni spodnji gumb, ki bo odprl tvoj fotoaparat. Podpisano izjavo <strong>slikaj</strong>, naložila pa se bo sama.
         <form action="#">
@@ -176,6 +176,7 @@
 
   <script src="js/progress_tracks/progress_track_conf.js"></script>
   <script src="js/confirmation.js"></script>
+  <script src="get-mobile-os.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
 </body>
 
