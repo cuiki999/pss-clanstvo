@@ -7,6 +7,6 @@
 
 - naj nekdo pregleda, èe je vse besedilo smiselno, in popravi/doda vse, kar je oznaèeno z rdeèo barvo v index.html
 
-- naj nekdo testira, èe upload s kamero dela na iOS-u (jaz ga nimam)
+- naj nekdo testira, èe upload s kamero dela na iOS-u (jaz ga nimam) in na tablici
 
 - èe ima kdo ideje za izboljšat dizajn, na dan z njimi :)
