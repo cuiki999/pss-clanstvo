@@ -81,7 +81,7 @@
     </div>
 
     <h2 class="poslji-izjavo">Pošlji izjavo</h2>
-    <p>Na voljo imaš tri načine:</p>
+    <p>Na voljo imaš štiri načine:</p>
     
     <div id="comp-upload" class="grey-option-frame pirate-light-grey">
       <p>Izjavo <strong>natisni</strong>, <strong>podpiši</strong> in <strong>slikaj/skeniraj</strong> ter nato naloži: 
@@ -93,7 +93,7 @@
               </i>  
             </div>
             <div class="file-path-wrapper">
-              <input type="text" id="file-upload-line" class="file-path grey-text2">           
+              <input type="text" id="file-upload-line" class="file-path grey-text2"> 
             </div>
             <p class="file-upload-message">Ko končaš, pritisni spodnji gumb:</p>
             <button type="submit" id="send-file" class="btn pirate-orange vredu">
@@ -102,14 +102,14 @@
             <i id="upload-check" class="fas fa-check"></i>
           </div>
         </form>
-        <br>
-        <p id="mobile-tip" class="note">Namig: ta korak lahko opraviš tudi z mobilnim telefonom (iOS ali Android) po tem, ko imaš pred seboj natisnjeno in podpisano izjavo. Na svojem telefonu preprosto začni postopek od začetka in preskoči prvi korak - izpolnjevanje pristopne izjave.</p>
       </p>
     </div>
 
-    <div id="phone-upload" class="grey-option-frame pirate-light-grey" style="display:none">
+    <p class="ali">ali</p>
+
+    <div id="phone-upload" class="grey-option-frame pirate-light-grey">
       <p>Izjavo najprej <strong>natisni</strong> in <strong>podpiši</strong>.<br><br>
-        Če si na mobilnem telefonu, pritisni spodnji gumb, ki bo odprl tvoj fotoaparat. Podpisano izjavo <strong>slikaj</strong>, naložila pa se bo sama.
+        Če si na mobilnem telefonu ali tablici, pritisni spodnji gumb, ki bo odprl tvoj fotoaparat. Podpisano izjavo <strong>slikaj</strong>, naložila pa se bo sama.
         <form action="#">
           <div class="file-field input-field">
             <div class="btn grey darken-1">
@@ -126,9 +126,9 @@
             </button>
             <i id="upload-check-cam" class="fas fa-check"></i>
           </div>
-        </form>
-        <br>
+        </form>        
       </p>
+      <p id="mobile-tip" class="note">Priporočamo, da izjavo izpolneš in natisneš na računalniku. Nato postopek začni od začetka na mobilnem telefonu ali tablici (Android ali iOS) in preskoči prvi korak - izpolnjevanje pristopne izjave.</p>
     </div>
     
     <p class="ali">ali</p>
@@ -176,7 +176,7 @@
 
   <script src="js/progress_tracks/progress_track_conf.js"></script>
   <script src="js/confirmation.js"></script>
-  <script src="js/get-mobile-os.js"></script>
+  <!-- <script src="js/get-mobile-os.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
 </body>
 

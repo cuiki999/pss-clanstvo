@@ -28,12 +28,7 @@
 .grey-option-frame {
 	color: $pirateGrey;
 	margin: 0.2rem;
-	max-height: 25rem;
 	border: 1px solid $pirateLightGrey;
-
-	@media #{$small-and-down} {
-		max-height: 33rem;
-	}
 
 	p {
 		padding: 2rem;

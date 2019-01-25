@@ -215,11 +215,7 @@
 .grey-option-frame {
   color: #414042;
   margin: 0.2rem;
-  max-height: 25rem;
   border: 1px solid #f1f2f2; }
-  @media only screen and (max-width: 600px) {
-    .grey-option-frame {
-      max-height: 33rem; } }
   .grey-option-frame p {
     padding: 2rem; }
     .grey-option-frame p span {

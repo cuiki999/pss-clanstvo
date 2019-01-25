@@ -25,6 +25,7 @@ function getMobileOperatingSystem() {
   else {
     compUploadDiv.style.display = 'block';
     phoneUploadDiv.style.display = 'none';
+    console.log('hey')
   }
 }
 
