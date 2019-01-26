@@ -10,3 +10,5 @@
 - naj nekdo testira, èe upload s kamero dela na iOS-u (jaz ga nimam) in na tablici
 
 - èe ima kdo ideje za izboljšat dizajn, na dan z njimi :)
+
+- treba je urediti še PayPal opcijo - trenutno ne dela (payment.html)
