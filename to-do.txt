@@ -1,14 +1,14 @@
 - (note to self) transpilaj, da deluje v starih browserjih
 
 - backend poskrbi za ustvarjanje izjave v .pdf:
-  * èe je izjava uspešno ustvarjena in na voljo za prenos -> display #form-successful (v confirmation.html)
-  * èe izjava ni ustvarjena, npr. èe uporabnik preskoèi ta korak -> display #form-unsuccessful (v confirmation.html)
-  * gumb 'konèano' (v confirmation.html) pošlje izjavo v backend
+  * ce je izjava uspesno ustvarjena in na voljo za prenos -> display #form-successful (v confirmation.html)
+  * ce izjava ni ustvarjena, npr. ce uporabnik preskoci ta korak -> display #form-unsuccessful (v confirmation.html)
+  * gumb 'koncano' (v confirmation.html) poslje izjavo v backend
 
-- naj nekdo pregleda, èe je vse besedilo smiselno, in popravi/doda vse, kar je oznaèeno z rdeèo barvo v index.html
+- naj nekdo pregleda, ce je vse besedilo smiselno, in popravi/doda vse, kar je oznaceno z rdeco barvo v index.html
 
-- naj nekdo testira, èe upload s kamero dela na iOS-u (jaz ga nimam) in na tablici
+- naj nekdo testira, ce upload s kamero dela na iOS-u (jaz ga nimam) in na tablici
 
-- èe ima kdo ideje za izboljšat dizajn, na dan z njimi :)
+- ce ima kdo ideje za izboljsat dizajn, na dan z njimi :)
 
-- treba je urediti še PayPal opcijo - trenutno ne dela (payment.html)
+- treba je urediti se PayPal opcijo - trenutno ne dela (payment.html)
