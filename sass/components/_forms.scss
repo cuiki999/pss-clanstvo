@@ -3,18 +3,15 @@
   -webkit-color: #a8a8a8;
 }
 
-
-
 .input-field {
   margin-bottom: 0rem;
 
   &.block {
-    margin-top: -0.5rem;
+    margin-top: 0rem;
   }
 }
 
 // INPUT FIELDS
-
 input:not([type]),
 input[type=text]:not(.browser-default),
 input[type=password]:not(.browser-default),
@@ -94,7 +91,6 @@ textarea.materialize-textarea {
     }
   }
 }
-
 
 [type="checkbox"] {
   

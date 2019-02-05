@@ -411,7 +411,7 @@
 .input-field {
   margin-bottom: 0rem; }
   .input-field.block {
-    margin-top: -0.5rem; }
+    margin-top: 0rem; }
 
 input:not([type]):focus:not([readonly]),
 input[type=text]:not(.browser-default):focus:not([readonly]),
