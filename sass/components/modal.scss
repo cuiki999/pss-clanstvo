@@ -1,0 +1,19 @@
+#notice-modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding: 1rem 3rem;
+    left: 50%;
+    top: 50%;
+    margin-top: -7.5rem;
+    margin-left: -20rem;
+    overflow: auto;
+    width: 40rem;
+    height: 15rem;
+    background: #fff;
+    border: 2px solid $pirateGrey;
+    justify-content: center;
+    box-shadow: 0.31rem 0.31rem 0.31rem 0 rgba(170, 170, 170, 0.8);
+
+
+}
