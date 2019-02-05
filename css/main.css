@@ -480,7 +480,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   margin-left: 0.3rem; }
 
 #notice-modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   overflow: auto;
