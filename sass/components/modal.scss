@@ -2,18 +2,46 @@
     display: block;
     position: fixed;
     z-index: 1;
-    padding: 1rem 3rem;
-    left: 50%;
-    top: 50%;
-    margin-top: -7.5rem;
-    margin-left: -20rem;
     overflow: auto;
+    padding: 1rem 3rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -6rem;
+    margin-left: -20rem;
     width: 40rem;
-    height: 15rem;
+    height: 12rem;
     background: #fff;
     border: 2px solid $pirateGrey;
-    justify-content: center;
     box-shadow: 0.31rem 0.31rem 0.31rem 0 rgba(170, 170, 170, 0.8);
 
+    @media #{$medium-and-down} {
+        width: 30rem;
+        height: 15rem;
+        margin-top: -7.5rem;
+        margin-left: -15rem;
+    }
 
+    @media #{$small-and-down} {
+        width: 20rem;
+        height: 24rem;
+        margin-top: -12rem;
+        margin-left: -10rem;
+    }
+
+    #close-modal {
+        float: right;
+        margin-top: -1.5rem;
+        margin-right: -1rem;
+        font-weight: bold;
+        font-size: 3rem;
+
+        &:hover {
+            color: $pirateOrange;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        width: 90%;
+    }
 }

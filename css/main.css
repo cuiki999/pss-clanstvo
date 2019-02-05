@@ -483,18 +483,40 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   display: block;
   position: fixed;
   z-index: 1;
-  padding: 1rem 3rem;
-  left: 50%;
-  top: 50%;
-  margin-top: -7.5rem;
-  margin-left: -20rem;
   overflow: auto;
+  padding: 1rem 3rem;
+  top: 50%;
+  left: 50%;
+  margin-top: -6rem;
+  margin-left: -20rem;
   width: 40rem;
-  height: 15rem;
+  height: 12rem;
   background: #fff;
   border: 2px solid #414042;
-  justify-content: center;
   box-shadow: 0.31rem 0.31rem 0.31rem 0 rgba(170, 170, 170, 0.8); }
+  @media only screen and (max-width: 992px) {
+    #notice-modal {
+      width: 30rem;
+      height: 15rem;
+      margin-top: -7.5rem;
+      margin-left: -15rem; } }
+  @media only screen and (max-width: 600px) {
+    #notice-modal {
+      width: 20rem;
+      height: 24rem;
+      margin-top: -12rem;
+      margin-left: -10rem; } }
+  #notice-modal #close-modal {
+    float: right;
+    margin-top: -1.5rem;
+    margin-right: -1rem;
+    font-weight: bold;
+    font-size: 3rem; }
+    #notice-modal #close-modal:hover {
+      color: #f68f35;
+      cursor: pointer; }
+  #notice-modal p {
+    width: 90%; }
 
 html {
   font-size: 15px; }
