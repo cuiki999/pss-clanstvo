@@ -1,6 +1,7 @@
 let redoForm = document.getElementById('redo-form');
 let successfulForm = document.getElementById('form-successful');
 let unsuccessfulForm = document.getElementById('form-unsuccessful');
+let downloadForm = document.getElementById('download-form');
 
 // uploading on a computer
 let compUploadFrame = document.getElementById('comp-upload');
@@ -27,6 +28,10 @@ let toggleSuccessfulUnsuccessful = () => {
 };
 
 toggleSuccessfulUnsuccessful();
+
+downloadForm.addEventListener('click', function () {
+  alert('Ta funkcija zaenkrat ne deluje');
+})
 
 sendFileButton.addEventListener('click', function (event) {
   if (fileUploadButton.value === '') {
